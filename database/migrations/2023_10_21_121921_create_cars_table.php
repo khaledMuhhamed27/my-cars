@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('cars', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('company');
+            $table->string('year_model');
+            $table->integer('price');
+            $table->string('color');
+            $table->string('car_status');
             $table->timestamps();
         });
     }
